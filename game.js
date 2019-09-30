@@ -53,7 +53,9 @@ $(document).keypress(function (){
 function checkAnswer(currentLevel){
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]){
     if (gamePattern.length === userClickedPattern.length){
-      setTimeout(nextSequence(),1000);
+      setTimeout(function(){
+      nextSequence();
+      },1000);
       userClickedPattern = [];
     }
   }else{
