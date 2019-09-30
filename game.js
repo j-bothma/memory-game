@@ -9,7 +9,7 @@ var level = 0;
 
 // Is used to choose the next color in the sequence, display it and add it to the gamePattern array
 function nextSequence(){
-  var randomNumber = Math.floor(Math.random()*3);
+  var randomNumber = Math.floor(Math.random()*4);
   var randomChosenColor = buttonColors[randomNumber];
   gamePattern.push(randomChosenColor);
   $("#"+randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
